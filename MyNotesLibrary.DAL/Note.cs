@@ -6,5 +6,7 @@ namespace MyNotesLibrary.DAL
 {
     public class Note
     {
+        
+
     }
 }
