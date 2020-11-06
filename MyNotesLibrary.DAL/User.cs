@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace MyNotesLibrary.DAL
 {
@@ -12,5 +13,8 @@ namespace MyNotesLibrary.DAL
         public DateTime DateOfBirth { get; set; }
         public DateTime CreatedDate { get; set; }
         public string Email { get; set; }
+        public List<Note> Notes { get; set; }
+
+
     }
 }
