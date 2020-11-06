@@ -5,6 +5,7 @@ namespace MyNotesLibrary.DAL
 {
 
     // testing this.. 
+    // and this..
     public class User
     {
         public int Id { get; set; }
