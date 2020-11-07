@@ -16,8 +16,8 @@ namespace MyNotesLibrary.DAL
         public DateTime DateOfBirth { get; set; }
         public DateTime CreatedDate { get; set; }
         public string Email { get; set; }
-        public List<Note> Notes { get; set; }
-
+        public List<NoteUser> NoteUsers { get; set; }
+        public List<Folder> Folders { get; set; }
 
     }
 }
