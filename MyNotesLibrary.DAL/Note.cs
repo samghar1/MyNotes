@@ -15,8 +15,7 @@ namespace MyNotesLibrary.DAL
         public DateTime? DeletedDate { get; set; }
         public int isPinned { get; set; }
         public string ContributerOrOwner { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
+        public List<NoteUser> NoteUsers { get; set; }
         public Folder Folder { get; set; }
         public int FolderId { get; set; }
 
