@@ -3,9 +3,6 @@ using System.Collections.Generic;
 
 namespace MyNotesLibrary.DAL
 {
-
-    // testing this.. 
-    // and this..
     public class User
     {
         public int Id { get; set; }
@@ -14,10 +11,9 @@ namespace MyNotesLibrary.DAL
         private string Username { get; set; }
         private string Password { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public DateTime CreatedDate { get; set; }
         public string Email { get; set; }
-        public List<NoteUser> NoteUsers { get; set; }
-        public List<Folder> Folders { get; set; }
-
+        public List<Note> Notes { get; set; }
+        public List<Folder> Folders { get; set; } 
+        public DateTime CreatedDate { get; set; }
     }
 }
