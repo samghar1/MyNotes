@@ -14,13 +14,13 @@ namespace MyNotesLibrary.DAL
         public DateTime? DeletedDate { get; set; }
         public bool IsDeleted { get; set; }
         public bool isPinned { get; set; }
+        public bool isArchived { get; set; }
         public User User { get; set; }
         public int UserId { get; set; }
         public Folder Folder { get; set; }
         public int FolderId { get; set; }
         public Colour Colour { get; set; }
         public int ColourId { get; set; }
-
 
     }
 }
