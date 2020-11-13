@@ -12,7 +12,7 @@ namespace MyNotesLibrary.DAL
         private string Password { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
-        public List<Note> Notes { get; set; }
+        public List<UserNote> UserNotes { get; set; }
         public List<Folder> Folders { get; set; } 
         public DateTime CreatedDate { get; set; }
     }

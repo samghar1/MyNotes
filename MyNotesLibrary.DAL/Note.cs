@@ -15,8 +15,7 @@ namespace MyNotesLibrary.DAL
         public bool IsDeleted { get; set; }
         public bool isPinned { get; set; }
         public bool isArchived { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
+        public List<UserNote> UserNotes { get; set; }
         public Folder Folder { get; set; }
         public int FolderId { get; set; }
         public Colour Colour { get; set; }
