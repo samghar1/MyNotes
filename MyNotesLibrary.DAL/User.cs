@@ -14,6 +14,9 @@ namespace MyNotesLibrary.DAL
         public string Email { get; set; }
         public List<UserNote> UserNotes { get; set; }
         public List<Folder> Folders { get; set; } 
-        public DateTime CreatedDate { get; set; }
+        public DateTime CreatedDate { get; set; } 
+        }
+         
+
     }
-}
+
