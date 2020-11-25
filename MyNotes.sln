@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNotes", "MyNotes\MyNotes.csproj", "{A245BF8F-BC69-4B9E-9B65-9A6E66CAF8D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNotesLibrary.DAL", "MyNotesLibrary.DAL\MyNotesLibrary.DAL.csproj", "{00069E8D-4F54-4D17-ABC9-9703245D586B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNotes.DAL", "MyNotesLibrary.DAL\MyNotes.DAL.csproj", "{00069E8D-4F54-4D17-ABC9-9703245D586B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNotes.Web", "MyNotes.Web\MyNotes.Web.csproj", "{4593E9A8-221D-4737-8742-B1C20E8A0A0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyNotes.Web", "MyNotes.Web\MyNotes.Web.csproj", "{4593E9A8-221D-4737-8742-B1C20E8A0A0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
