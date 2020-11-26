@@ -13,7 +13,7 @@ namespace MyNotesLibrary.DAL
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        [Required,MaxLength(50)]
+        [Required, MaxLength(50)]
         public string Title { get; set; }
 
         [Required]
@@ -33,18 +33,16 @@ namespace MyNotesLibrary.DAL
 
         [Required]
         public bool isArchived { get; set; }
+        public User User { get; set; }
 
-        [Required]
-        public List<UserNote> UserNotes { get; set; }
+        [ForeignKey("User")]
+        public int? UserId { get; set; }
+
         public Folder Folder { get; set; }
 
-        [Required]
         [ForeignKey("Folder")]
-        public int FolderId { get; set; }
-        public Colour Colour { get; set; }
-
-        [ForeignKey("Colour")]
-        public int ColourId { get; set; } 
+        public int? FolderId { get; set; } 
+        public string Colour { get; set; } 
 
     }
 }

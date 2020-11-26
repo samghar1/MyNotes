@@ -32,7 +32,7 @@ namespace MyNotesLibrary.DAL
 
         [Required, MaxLength(30)]
         public string Email { get; set; }
-        public List<UserNote> UserNotes { get; set; }
+        public List<Note> Notes { get; set; }
         public List<Folder> Folders { get; set; }
 
         [Required]

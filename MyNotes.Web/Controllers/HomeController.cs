@@ -8,16 +8,35 @@ using Microsoft.Extensions.Logging;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using MyNotes.Web.Models;
+using MyNotesLibrary.DAL;
+using MyNotesLibrary.DAL.Context;
 
 namespace MyNotes.Web.Controllers
 {
     public class HomeController : Controller
-    {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+    {  
+        private readonly MyNotesContext _dbContext;
+        public HomeController(MyNotesContext dbContext)
         {
-            _logger = logger;
+            _dbContext = dbContext;
+        }
+
+        public string addUser(string firstname, string lastname) {
+
+            try
+            {
+                var myUser = new User { CreatedDate = DateTime.Now, DateOfBirth = DateTime.Now, Email = "samir.mghar@gmail.com", FirstName = "Samir", LastName = "Amghar" };
+                _dbContext.Users.Add(myUser);
+                _dbContext.SaveChanges();
+
+                return "Changes have been saved.";
+            }
+            catch (Exception ex)
+            {
+
+                return ex.Message;
+            } 
         }
 
         public IActionResult Index()
